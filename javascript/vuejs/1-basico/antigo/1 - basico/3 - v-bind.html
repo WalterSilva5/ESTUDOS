@@ -1,0 +1,41 @@
+<!--exemplo 2: uso de v-bind e v-html
+pode ser usado metodos javascript nas strings dentro das chaves
+exemplo {{mensagem.toUpper()}}-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+<div id="app">
+    <h1>{{message}}</h1>
+    <h1>{{mensagem2}}</h1>
+    <span v-bind:title="mensagem_v_bind" v-html="botao1"></span>
+
+</div>
+
+
+<script src="vue.js">
+</script>
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            message: "texto da mensagem",
+            mensagem2: "outra mensagem",
+            //botao com v-htnml
+            botao1: "<button>teste1</button>",
+            mensagem_v_bind: "mensagem v bind",
+            //pode ser usado metodos javascript de string nas passagens de string entre duas chaves {{}}
+        }
+    })
+</script>
+
+</html>

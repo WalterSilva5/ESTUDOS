@@ -1,0 +1,15 @@
+.vscode
+/node_modules/
+*/node_modules/
+**/node_modules/
+/env/
+*/env/
+*/env*
+*.idea
+./idea/
+/idea/
+/.idea/
+*idea/
+
+*package-lock.json
+package-lock.json

@@ -1,0 +1,14 @@
+UPDATE AGENDA
+SET col1 = valor1,
+    col2 = valor2,
+    col3 = valor3
+WHERE expressão
+LIMIT valor;
+
+EX:
+UPDATE AGENDA
+SET IDADE = 25
+WHERE ID = 2;
+
+UPDATE SEM WHERE AFETA TODAS AS LINHAS
+DO BANCO DE DADOS

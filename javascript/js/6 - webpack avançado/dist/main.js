@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log({nome:"walter",idade:24})})();

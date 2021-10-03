@@ -1,0 +1,14 @@
+.testp {
+    animation: bdcolor 1s infinite;
+    background-color: yellow;
+}
+
+@keyframes bdcolor {
+    from {
+        border: 1px solid rgb(random(156), random(73), random(234));
+    }
+
+    to {
+        border: 1px solid rgb(random(63), random(156), random(63));
+    }
+}

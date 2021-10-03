@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let obj = {
+            nome: "walter",
+            idade: 24
+        }
+
+        let proxy = new Proxy(obj, {
+            get(target, nome){
+                console.log("Alguem esta pedindo nome")
+                return target.nome;
+            },
+            set(target, name, value){
+                console.log("Alguem esta alterando o nome");
+                target.name=value;
+            }
+        })
+
+
+        console.log(proxy.nome)
+        console.log(proxy.idade)
+    </script>
+</body>
+</html>

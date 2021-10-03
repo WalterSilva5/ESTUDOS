@@ -1,0 +1,44 @@
+<!-- usada para inserir conteudo em um componente atraves da tag template -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <novo-componente>
+            <template v-slot:nome>
+                <h1>walter</h1>
+            </template>
+            <template v-slot:sobrenome>
+                <h1>silva</h1>
+            </template>
+        </novo-componente>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        Vue.component('novo-componente', {
+            template: `
+                <div>
+                    <p>template da div</p>
+                    <button>botao da div</button>
+                    <slot name='nome'></slot>
+
+                    <slot name='sobrenome'></slot>
+                </div>
+            `
+        })
+
+        let app = new Vue({
+            el: '#app',
+            data: {}
+        })
+    </script>
+</body>
+
+</html>

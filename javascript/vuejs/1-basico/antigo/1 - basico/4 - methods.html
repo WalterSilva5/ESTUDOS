@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <p>{{mensagem.toUpperCase()}}</p>
+        <input type="text" id="nova_mensagem" placeholder="Nova mensagem" v-on:keyup="trocarMensagem($event.target.value)">
+    </div>
+
+
+    <script src="vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                mensagem: "Teste de mensagem",
+            },
+            methods: {
+                reverterMensagem: function() {
+                    //alert("chegou aqui");
+                    this.mensagem = this.mensagem.split('').reverse().join('');
+                },
+                trocarMensagem: function(nova_mensagem) {
+                    this.mensagem = nova_mensagem;
+                }
+            },
+        })
+
+        //app.reverterMensagem();
+        //app.trocarMensagem("teste de nova mensagem");
+    </script>
+</body>
+
+</html>
+
+</html>

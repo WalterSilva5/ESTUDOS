@@ -1,0 +1,44 @@
+<!--mudar valor do computed properties-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        teste
+        <h1>Nome:{{fullName}}</h1>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                person: {
+                    firstName: "walter",
+                    lastName: "pereira",
+                }
+            },
+            computed: {
+                fullName: {
+                    get: function() {
+                        return `${this.person.firstName} ${this.person.lastName}`;
+                    },
+                    set: function(novoNome) {
+                        let nome = novoNome.split(' '),
+                            this.person.firstName = nome[0];
+                        this.person.lastName = nome[1];
+                    },
+                }
+
+            }
+        });
+    </script>
+</body>
+
+</html>

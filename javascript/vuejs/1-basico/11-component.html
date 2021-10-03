@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="../vue.global.js"></script>
+    <title>Document</title>
+</head>
+
+
+<div id="app">
+    <comp-button></comp-button>
+</div>
+
+<body>
+    <script>
+        const app = Vue.createApp({});
+        let componentButton = {
+            template: `<button style="background-color:red;">BUTTON</button>`
+        }
+        app.component("comp-button", componentButton);
+        app.mount("#app");
+    </script>
+</body>
+
+</html>

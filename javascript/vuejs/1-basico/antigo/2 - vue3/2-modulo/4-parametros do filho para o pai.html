@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../vue.js"></script>
+
+</head>
+
+<body>
+
+    <div id="aplicacao">
+        <h1>TESTE {{total}}</h1>
+        <div>
+            <botao_ent></botao_ent>
+        </div>
+    </div>
+    <script>
+        comp = {
+            template: '<button v-on:click="increment">{{ counter }}</button>',
+            data() {
+                return {
+                    counter: 0
+                }
+            },
+            methods: {
+                increment: function() {
+                    this.counter += 1
+                    this.$parent.total = this.counter;
+                }
+            },
+        }
+        app = Vue.createApp({
+            el: '#counter-event-example',
+            data() {
+                return {
+                    total: 0
+                }
+            },
+        });
+        app.component('botao_ent', comp)
+        app.mount('#aplicacao')
+    </script>
+
+</body>
+
+</html>

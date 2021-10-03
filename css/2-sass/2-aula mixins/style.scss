@@ -1,0 +1,27 @@
+$bg-color: rgb(7, 241, 7);
+$mycolor: rgb(5, 5, 172);
+
+@mixin misturar-divs {
+    background-color: $bg-color;
+    color: $mycolor;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 5px black;
+    width: 400px;
+    border-radius: 5px;
+    transition: 1s
+}
+
+.div1 {
+    @include misturar-divs;
+    font-size: 70px;
+
+    &:hover {
+        box-shadow: 0 0 0 0;
+        transition: 2s;
+    }
+}
+
+.div2{
+    @extend .div1;
+    background-color: orange;
+}

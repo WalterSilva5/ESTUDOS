@@ -1,0 +1,32 @@
+<!--exemplo inicial-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <h2 v-maiuscula>{{nome}}</h2>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        let app = new Vue({
+            el: '#app',
+            data: {
+                nome: "Walter Silva"
+            },
+            directives: {
+                maiuscula: function(el) {
+                    el.innerText = el.innerText.toUpperCase();
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

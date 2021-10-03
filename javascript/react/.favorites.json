@@ -1,0 +1,18 @@
+[
+    {
+        "type": "Directory",
+        "name": "/home/wsi/repos/estudos/javascript/react/2-aula-pratica/src",
+        "parent_id": null,
+        "workspaceRoot": "/home/wsi/repos/estudos/javascript/react",
+        "workspacePath": "2-aula-pratica/src",
+        "id": "SAkpR6E7iv4JQIlr"
+    },
+    {
+        "type": "Directory",
+        "name": "/home/wsi/repos/estudos/javascript/react/1-aula",
+        "parent_id": null,
+        "workspaceRoot": "/home/wsi/repos/estudos/javascript/react",
+        "workspacePath": "1-aula",
+        "id": "R9qLE2C1Q0S5DOoF"
+    }
+]

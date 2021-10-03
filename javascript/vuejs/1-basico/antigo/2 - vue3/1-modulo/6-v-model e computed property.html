@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../vue.js"></script>
+
+</head>
+
+<body>
+
+    <div id="aplicacao">
+        <h1>TESTE</h1>
+        <input type="text" v-model="texto">
+        <h3>{{resultado}}</h3>
+    </div>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    texto: "",
+                    resultado: "teste",
+                }
+            },
+            watch: {
+                texto(novo_texto, texto_antigo) {
+                    console.log(novo_texto.length);
+                    if (novo_texto.length >= 5) {
+                        this.resultado = "TEXTO GRANDE";
+                    }
+                }
+            }
+        })
+        app.mount('#aplicacao')
+    </script>
+
+</body>
+
+</html>

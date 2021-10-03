@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //promises com objeto Promise
+        const cep = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve({teste1: 'teste1'});
+            }, 200)
+        });
+        const usuario = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve({nome: 'walter'});
+            }, 100)
+        });
+        //agrupa as promisses que serão resolvidas juntas
+        Promise
+            //pode ser usado race() no lugar do all()
+            .all([cep, usuario])
+            .then(responses => {
+                console.log(responses)
+            })
+            .catch(erro => console.log(erro));
+    </script>
+</body>
+
+</html>
