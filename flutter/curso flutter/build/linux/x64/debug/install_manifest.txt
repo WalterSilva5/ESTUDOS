@@ -1,0 +1,11 @@
+/home/wsi/repos/estudos/flutter/curso flutter/build/linux/x64/debug/bundle/flutter_1
+/home/wsi/repos/estudos/flutter/curso flutter/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/wsi/repos/estudos/flutter/curso flutter/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/wsi/repos/estudos/flutter/curso flutter/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json
+/home/wsi/repos/estudos/flutter/curso flutter/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/background.jpg
+/home/wsi/repos/estudos/flutter/curso flutter/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
+/home/wsi/repos/estudos/flutter/curso flutter/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/home/wsi/repos/estudos/flutter/curso flutter/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+/home/wsi/repos/estudos/flutter/curso flutter/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+/home/wsi/repos/estudos/flutter/curso flutter/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
+/home/wsi/repos/estudos/flutter/curso flutter/build/linux/x64/debug/bundle/data/flutter_assets/version.json

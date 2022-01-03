@@ -1,0 +1,29 @@
+# ninja log v5
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/libflutter_linux_gtk.so	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_engine.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_value.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/fl_view.h	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	576003cf8d37468c
+1	9711	0	flutter/_phony_	576003cf8d37468c
+1	9711	0	/home/wsi/repos/estudos/flutter/curso flutter/build/linux/x64/debug/flutter/_phony_	576003cf8d37468c
+9711	10075	1641224792331527756	CMakeFiles/flutter_1.dir/main.cc.o	ebb7aa2854d701cb
+9711	10108	1641224792361528627	CMakeFiles/flutter_1.dir/flutter/generated_plugin_registrant.cc.o	cd447b906e18be65
+9711	10129	1641224792384862636	CMakeFiles/flutter_1.dir/my_application.cc.o	73ec99229f412ee0
+10129	10273	1641224792528200131	intermediates_do_not_run/flutter_1	a3b0d1f84ccf3eca
+10273	10354	0	CMakeFiles/install.util	20fa712378d35a42
