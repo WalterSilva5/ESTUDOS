@@ -19,4 +19,14 @@ fn main(){
         18..=100 => println!("Você é maior de idade"),
         _ => println!("Idade inválida")
     }
+
+    let text_1 = String::from("Hello");
+    let text_2 = String::from("World");
+    let text_3 = join_strings(text_1, text_2);
+    println!("join strings result {}", text_3);
+}
+
+
+fn join_strings(text_1: String, text_2: String) -> String {
+    return format!("{} - {}", text_1, text_2\);
 }
