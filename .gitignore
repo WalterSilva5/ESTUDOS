@@ -13,3 +13,6 @@
 
 *package-lock.json
 package-lock.json
+
+*/dist/
+*/dist/**/**
