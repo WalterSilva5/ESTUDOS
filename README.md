@@ -1,3 +1,3 @@
 # ESTUDOS
 
-repositorio utilizado para backup de conteudos utilizados durante estudos de tecnologias 
+repositorio utilizado para centralização de conteudos utilizados durante estudos de tecnologias diversas.
