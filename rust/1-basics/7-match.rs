@@ -3,6 +3,9 @@ enum CarType {
     Sedan,
     SUV
  }
+
+ let a = 'abc';
+ 
  fn print_size(car:CarType) {
     match car {
        CarType::Hatch => {
