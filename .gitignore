@@ -19,7 +19,7 @@ package-lock.json
 
 
 # Compilação de saída do Cargo
-/target/
+*/target/
 
 # Arquivos de pacotes gerados
 *.crate
