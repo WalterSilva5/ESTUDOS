@@ -16,3 +16,185 @@ package-lock.json
 
 */dist/
 */dist/**/**
+
+
+# Compilação de saída do Cargo
+/target/
+
+# Arquivos de pacotes gerados
+*.crate
+
+# Arquivos de log
+*.log
+
+# Diretório de backup do Cargo, usado para substituições de dependências
+/.cargo/config
+
+# Arquivos de lock do Cargo
+Cargo.lock
+
+# Resultados de teste
+*.rs.bk
+
+# VS Code
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+
+# Outros editores/IDEs
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+*.~*
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+
+# Diretório bin para compilação local
+/bin/
+
+/tmp/
+
+/.out/
+*.log
+*.tmp
+
+# Diretório de dependências do Go
+/vendor/
+
+# Dependências do módulo do Go
+/go.sum
+
+# IDEs e editores
+/.idea/
+/.vscode/
+/*.iml
+
+# Configurações locais do Go
+.env
+
+# Binários compilados
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Arquivos de backup
+*.bak
+*.swp
+*.swo
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+
+# Dependências do Composer
+/vendor/
+
+# Cache do Composer
+composer.lock
+
+# Arquivos de configuração do ambiente local
+.env
+.env.*.local
+
+# Logs
+*.log
+
+# Diretórios de cache
+/cache/
+/tmp/
+/node_modules/
+
+# Arquivos de cache de pacotes
+*.phar
+
+# Configurações do PHPStorm
+/.idea/
+/*.iml
+
+# Configurações do Visual Studio Code
+/.vscode/
+
+# Arquivos de backup e temporários
+*.bak
+*.swp
+*.swo
+*.tmp
+
+# Diretório de uploads (ajustar conforme necessário)
+public/uploads/
+
+# Arquivos específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+
+# Diretórios de build do Dart/Flutter
+/build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.package
+.pub-cache
+.pub
+.dart_tool/
+.idea/
+android/.gradle/
+android/app/build/
+android/local.properties
+ios/Flutter/Flutter.framework/
+ios/Flutter/App.framework/
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Podfile.lock
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/build/
+ios/.symlinks/
+ios/Flutter/ephemeral/
+macos/.symlinks/
+macos/Flutter/ephemeral/
+web/.dart_tool/
+windows/.dart_tool/
+linux/.dart_tool/
+windows/flutter/ephemeral/
+linux/flutter/ephemeral/
+
+# Dependências gerenciadas pelo pub
+packages
+.pinned
+
+# Arquivos específicos do Visual Studio Code
+.vscode/
+
+# Arquivos específicos do IntelliJ
+.idea/
+*.iml
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração local
+*.log
+*.lock
+*.orig
+*.rej
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de backup e temporários
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Outros
+.dart_tool/
