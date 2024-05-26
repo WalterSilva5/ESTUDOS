@@ -1,5 +1,5 @@
 [package]
-name = "movies_lib"
+name = "movies_player"
 version = "0.1.0"
 authors = ["walter"]
 

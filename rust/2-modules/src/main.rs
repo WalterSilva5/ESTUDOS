@@ -1,5 +1,6 @@
-mod movies;
+mod media; 
+use media::movies::play;
 
 fn main() {
-    movies::play("Spider Man".to_string());
+    play("Spider Man".to_string());
 }
