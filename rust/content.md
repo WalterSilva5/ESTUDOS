@@ -7,6 +7,23 @@ cd project_name
 
 para adicionar novas dependencias basta editar o arquivo Cargo.toml e adicionar a dependencia
 
+
+#####################---###############
+## crates: 
+  binary: aplicações com pacote main que podem ser executadas
+  library: pacotes e utilitaros que podem ser utilizados por outros crates (tanto binary quanto library)
+
+o cargo é utilizado para gerenciar crates
+comandos cargo:
+
+    cargo new
+    cargo build
+    cargo run
+    cargo clean
+    cargo check
+    cargo doc
+    cargo fix --edition
+
 #####################---###############
 ## Modules: 
 exemplo: modulo media é um diretorio, dentro desse diretorio temos dois arquivos
@@ -45,21 +62,45 @@ e o arquivo `src/main.rs`:
 
 
 #####################---###############
-## crates: 
-  binary: aplicações com pacote main que podem ser executadas
-  library: pacotes e utilitaros que podem ser utilizados por outros crates (tanto binary quanto library)
+## Data types
 
-o cargo é utilizado para gerenciar crates
-comandos cargo:
+Array
+Vector
+Slice
+Tuple
+Struct
+Enum
+Generics
+and others.
 
-    cargo new
-    cargo build
-    cargo run
-    cargo clean
-    cargo check
-    cargo doc
-    cargo fix --edition
 
+#-#-#
+Array
+In Rust, arrays have a fixed size and the elements must be of the same type.
+
+#-#-#
+Vector
+Vectors are similar to arrays, but they can grow or shrink in size.
+
+#-#-#
+Slice
+A slice is a reference to a part of an array or a vector.
+
+#-#-#
+Tuple
+A tuple is a collection of values of different types.
+
+#-#-#
+Struct
+A struct is a custom data type that groups named fields of different types into a single type.
+
+#-#-#
+Enum
+An enum is a custom data type that can have different variants.
+
+#-#-#
+Generics
+Generics allow you to define functions, structs, and enums that can work with any data type.
 
 #####################---###############
 ## 
