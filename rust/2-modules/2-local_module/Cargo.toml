@@ -1,0 +1,9 @@
+[package]
+name = "movies_player"
+version = "0.1.0"
+authors = ["walter"]
+edition = "2018"
+
+[[bin]]
+name = "movies"
+path = "src/main.rs"
