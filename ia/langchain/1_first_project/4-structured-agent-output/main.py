@@ -16,11 +16,10 @@ llm = ChatOllama(
     temperature=0,
     top_p=0.9,
     top_k=40,
-    num_predict=100,  # Limit response length
-    stop=["\n", ".", "!"]  # Stop tokens
+    num_predict=100,
 )
 
-prompt = f"traduza para português: hello, how are you? {parser.get_format_instructions()}"
+prompt = f"traduza para português: hello, how are you? expected output format: {parser.get_format_instructions()}"
 print("Executando...")
 response = llm.invoke(prompt)
-print(f"Response:\n{response.content}")
+print(f"RESPONSE:\n{response.content}")
