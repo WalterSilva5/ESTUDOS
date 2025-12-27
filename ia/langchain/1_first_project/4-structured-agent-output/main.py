@@ -1,26 +1,26 @@
 from langchain_ollama import ChatOllama
+from pydantic import BaseModel, Field
 
-from langchain_core.prompts import PromptTemplate
-template_string = (
-    "traduza o seguinte texto para o português: {text_to_translate}"
+from langchain_core.output_parsers import PydanticOutputParser
+
+# Simple prompt without JSON formatting
+
+class OutputTemplate(BaseModel):
+    translation: str = Field(..., description="The translated text in Portuguese.")
+
+print("Configurando o parser de saída...")
+parser = PydanticOutputParser(pydantic_object=OutputTemplate)
+print(f"exemplo de saída esperada: {parser.get_format_instructions()}")
+llm = ChatOllama(
+    model="qwen2.5:3b", 
+    temperature=0,
+    top_p=0.9,
+    top_k=40,
+    num_predict=100,  # Limit response length
+    stop=["\n", ".", "!"]  # Stop tokens
 )
 
-#parametro a ser traduzido
-text_to_translate = "hello, how are you?"
-
-#prompt template
-translation_prompt = PromptTemplate(
-    input_variables=["text_to_translate"], template=template_string
-)
-
-#configuração do modelo e cadeia
-llm = ChatOllama(model="qwen2.5:3b", temperature=0)
-
-#criação da cadeia de tradução
-chain = translation_prompt | llm
-formatted_prompt = translation_prompt.format(
-    text_to_translate=text_to_translate)
-response = chain.invoke(input={"text_to_translate": text_to_translate})
-result = response.content
-print(f"Prompt: {formatted_prompt}")
-print(f"Response: {result}")
+prompt = f"traduza para português: hello, how are you? {parser.get_format_instructions()}"
+print("Executando...")
+response = llm.invoke(prompt)
+print(f"Response:\n{response.content}")
