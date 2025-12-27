@@ -27,7 +27,7 @@ tools = [
 ]
 
 
-llm = ChatOllama(model="qwen3-vl:4b", temperature=0)
+llm = ChatOllama(model="qwen2.5:3b", temperature=0)
 
 agent = initialize_agent(
     tools,

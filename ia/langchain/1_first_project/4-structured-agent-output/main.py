@@ -1,38 +1,26 @@
-from langchain.agents import initialize_agent, AgentType
 from langchain_ollama import ChatOllama
-from langchain.tools import tool
 
-@tool
-def somar(numeros: str) -> int:
-    """
-    Soma dois números separados por vírgula e retorna o resultado.
-    Entrada: 'a,b' onde a e b são números inteiros.
-    Exemplo: '2,3' retorna 5
-    """
-    # Remove quotes if present
-    numeros = numeros.strip().strip("'\"")
-    parts = numeros.split(',')
-    if len(parts) != 2:
-        return f"Erro: esperado 2 números separados por vírgula, recebi: {numeros}"
-    try:
-        a, b = map(int, parts)
-        return a + b
-    except ValueError as e:
-        return f"Erro ao converter para inteiros: {e}"
-
-llm = ChatOllama(model="qwen3-vl:4b", temperature=0)
-
-tools = [somar]
-
-agent = initialize_agent(
-    tools,
-    llm,
-    agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
-    verbose=True
+from langchain_core.prompts import PromptTemplate
+template_string = (
+    "traduza o seguinte texto para o português: {text_to_translate}"
 )
 
-# Perguntando ao agente
-response = agent.invoke({"input": "Qual é a soma de 2 e 3?"})
+#parametro a ser traduzido
+text_to_translate = "hello, how are you?"
 
-# Exibindo a resposta
-print("Response:", response["output"])
+#prompt template
+translation_prompt = PromptTemplate(
+    input_variables=["text_to_translate"], template=template_string
+)
+
+#configuração do modelo e cadeia
+llm = ChatOllama(model="qwen2.5:3b", temperature=0)
+
+#criação da cadeia de tradução
+chain = translation_prompt | llm
+formatted_prompt = translation_prompt.format(
+    text_to_translate=text_to_translate)
+response = chain.invoke(input={"text_to_translate": text_to_translate})
+result = response.content
+print(f"Prompt: {formatted_prompt}")
+print(f"Response: {result}")

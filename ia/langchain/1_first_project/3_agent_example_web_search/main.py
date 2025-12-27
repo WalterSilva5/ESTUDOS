@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-llm = ChatOllama(model="qwen3-vl:4b", temperature=0)
+llm = ChatOllama(model="qwen2.5:3b", temperature=0)
 
 tools = [TavilySearch()]
 react_prompt = hub.pull("hwchase17/react")

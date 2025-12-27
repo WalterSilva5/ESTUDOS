@@ -10,7 +10,7 @@ def somar(a: int, b: int) -> int:
     """
     return a + b
 
-llm = ChatOllama(model="qwen3-vl:4b", temperature=0)
+llm = ChatOllama(model="qwen2.5:3b", temperature=0)
 
 tools = [somar]
 

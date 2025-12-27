@@ -14,7 +14,7 @@ translation_prompt = PromptTemplate(
 )
 
 #configuração do modelo e cadeia
-llm = ChatOllama(model="qwen3-vl:4b", temperature=0)
+llm = ChatOllama(model="qwen2.5:3b", temperature=0)
 
 #criação da cadeia de tradução
 chain = translation_prompt | llm
